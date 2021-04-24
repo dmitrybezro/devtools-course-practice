@@ -14,7 +14,7 @@ class Vigener_cipher {
     Vigener_cipher() {
     key = "";
     }
-    Vigener_cipher(const std::string& _key) {
+    explicit Vigener_cipher(const std::string& _key) {
         key = _key;
     }
     void set_key(const std::string& _key);
