@@ -12,7 +12,7 @@ class Vigener_cipher {
     int length_abc = 26;
  public:
     Vigener_cipher() {
-    key = "";
+        key = "";
     }
     explicit Vigener_cipher(const std::string& _key) {
         key = _key;
