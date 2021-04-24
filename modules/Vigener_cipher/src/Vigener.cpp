@@ -37,7 +37,7 @@ std::string Vigener_cipher::encrypt(const std::string& str_input) {
 }
 
 std::string Vigener_cipher::decrypt(const std::string& str_input) {
-    if(key != "") {
+    if (key != "") {
         std::string str_key = get_key_string(str_input, key);
         //  Расшифровать
         std::string str_output(str_input);
@@ -65,7 +65,7 @@ std::string Vigener_cipher::correct(const std::string& str_input) {
     int code_A = static_cast<int>('A');
     int code_Z = static_cast<int>('Z');
     int length = static_cast<int>(str_input.length());
-    for (int i = 0, corr = 0; i < length; i++, corr = 0 ){
+    for (int i = 0, corr = 0; i < length; i++, corr = 0) {
         int code_elem = static_cast<int>(str_input[i]);
         if ((code_elem >= code_A) && (code_elem <= code_Z))
             corr = 32;
