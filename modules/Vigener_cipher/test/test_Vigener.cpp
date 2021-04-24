@@ -1,7 +1,6 @@
 // Copyright 2021 Bezrodnov Dmitry
 
 #include <gtest/gtest.h>
-
 #include"include/Vigener.h"
 
 TEST(VigenerTest, correct_test){
