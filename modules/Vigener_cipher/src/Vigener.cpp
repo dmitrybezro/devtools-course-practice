@@ -7,7 +7,7 @@ void Vigener_cipher::set_key(const std::string& _key) {
     key = _key;
 }
 
-std::string Vigener_cipher::get_key() {
+std::string Vigener_cipher::get_key() const {
     return key;
 }
 

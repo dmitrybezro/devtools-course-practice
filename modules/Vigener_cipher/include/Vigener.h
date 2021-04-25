@@ -8,17 +8,15 @@
 
 class Vigener_cipher {
  private:
-    std::string key;
-    const int length_abc = 26;
+    std::string key = "";
+    static const int length_abc = 26;
  public:
-    Vigener_cipher() {
-        key = "";
-    }
+    Vigener_cipher() {}
     explicit Vigener_cipher(const std::string& _key) {
         key = _key;
     }
     void set_key(const std::string& _key);
-    std::string get_key();
+    std::string get_key() const;
     std::string encrypt(const std::string& str_input);
     std::string decrypt(const std::string& str_input);
  private:
