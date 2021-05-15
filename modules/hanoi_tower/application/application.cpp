@@ -1,8 +1,14 @@
 // Copyright 2021 Bezrodnov Dmitry
 
-#include<iostream>
+#include "include/hanoi_application.h"
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string>
 
 int main(int argc, const char** argv) {
-    std::cout<<"HELLO WORLD"<<std::endl;
+    HanoiApplication app;
+    std::string output = app(argc, argv);
+    printf("%s\n", output.c_str());
     return 0;
 }

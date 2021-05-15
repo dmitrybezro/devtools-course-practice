@@ -62,4 +62,14 @@ TEST(Vodeneev_Mikhail_HanoiTowerTest, Ring_with_null_size) {
     ASSERT_EQ(a.GetTowerC(), testC);
 }
 
+TEST(HanoiTowerTest, Number_of_permutations) {
+    Hanoi a(1);
+    std::stack<int> testA = a.GetTowerA(),
+        testB = a.GetTowerB(), testC = a.GetTowerC();
+
+    a.ring(1, &testA, &testB, &testC);
+
+    ASSERT_EQ(1, a.get_permutations());
+}
+
 
