@@ -10,8 +10,7 @@
 #include "include/hanoi_application.h"
 
 std::string HanoiApplication::help(const std::string& appname) {
-        return "This is an application" \
-        "for solving the task of the Hanoi tower.\n" \
+        return "This is an application for solving task Hanoi tower\n"\
         "Please provide arguments in the following format:\n"+
         appname + " <number_of_rings> " +
         "Where the argument is a positive integer less than 20.";
