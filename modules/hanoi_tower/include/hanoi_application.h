@@ -7,10 +7,10 @@
 #include "include/hanoi_tower.h"
 
 class HanoiApplication {
-public:
+ public:
     std::string operator()(int argc, const char** argv);
 
-private:
+ private:
     std::string help(const std::string& appname);
     int parseArgument(const char* arg);
     bool CheckArgument(const std::string& str);

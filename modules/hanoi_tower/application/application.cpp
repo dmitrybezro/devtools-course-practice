@@ -2,8 +2,6 @@
 
 #include "include/hanoi_application.h"
 
-#include <stdlib.h>
-#include <stdio.h>
 #include <string>
 
 int main(int argc, const char** argv) {
