@@ -10,23 +10,24 @@
 #include "include/hanoi_application.h"
 
 std::string HanoiApplication::help(const std::string& appname) {
-        return "This is an application for solving the task of the Hanoi tower.\n" \
+        return "This is an application" \
+        "for solving the task of the Hanoi tower.\n" \
         "Please provide arguments in the following format:\n"+
         appname + " <number_of_rings> " +
         "Where the argument is a positive integer less than 20.";
 }
 
 bool HanoiApplication::CheckArgument(const std::string& str) {
-    if(str.size() == 1) {
+    if (str.size() == 1) {
         int value_symbol = static_cast<int>(str[0]);
-        if((value_symbol >= 48) && (value_symbol <= 57))
+        if ((value_symbol >= 48) && (value_symbol <= 57))
             return true;
     } else {
-        if(str.size() == 2) {
-            if(static_cast<int>(str[0]) == 49) {
+        if (str.size() == 2) {
+            if (static_cast<int>(str[0]) == 49) {
                 int value_symbol = static_cast<int>(str[1]);
-                if((value_symbol >= 48) && (value_symbol <= 57))
-                    return true; 
+                if ((value_symbol >= 48) && (value_symbol <= 57))
+                    return true;
             }
         }
     }
