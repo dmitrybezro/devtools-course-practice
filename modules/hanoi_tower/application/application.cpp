@@ -1,6 +1,5 @@
 // Copyright 2021 Bezrodnov Dmitry
 
-#include <stdlib.h>
 #include <stdio.h>
 #include <string>
 

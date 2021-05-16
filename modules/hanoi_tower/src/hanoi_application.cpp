@@ -3,8 +3,6 @@
 #include <cstdlib>
 #include <iostream>
 #include <sstream>
-#include <string>
-#include <stack>
 
 
 #include "include/hanoi_application.h"
