@@ -65,3 +65,12 @@ set_tests_properties (${prefix}_Check_number_permutations_3 PROPERTIES
 PASS_REGULAR_EXPRESSION "Number of permutations of rings = 7"
 LABELS "${MODULE}")
 
+add_test(
+NAME ${prefix}_Check_number_permutations_10
+COMMAND ${APPLICATION} 10
+)
+
+set_tests_properties (${prefix}_Check_number_permutations_10 PROPERTIES
+PASS_REGULAR_EXPRESSION "Number of permutations of rings = 1023"
+LABELS "${MODULE}")
+
