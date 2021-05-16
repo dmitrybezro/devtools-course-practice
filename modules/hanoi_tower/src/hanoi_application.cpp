@@ -3,6 +3,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <sstream>
+#include <string>
+#include <stack>
 
 
 #include "include/hanoi_application.h"
@@ -60,7 +62,7 @@ std::string HanoiApplication::operator()(int argc, const char** argv) {
         testB = h_t.GetTowerB(), testC = h_t.GetTowerC();
 
     h_t.ring(_size, &testA, &testB, &testC);
-    stream << "Number of permutations of rings = " 
+    stream << "Number of permutations of rings = "
             << std::to_string(h_t.get_permutations());
     return stream.str();
 }
