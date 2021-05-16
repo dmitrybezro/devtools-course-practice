@@ -47,7 +47,7 @@ void Hanoi::ring(int n, std::stack<int> *A, std::stack<int> *B,
     ring(n - 1, C, B, A);
 }
 
-int Hanoi::get_permutations() const {
+unsigned int Hanoi::get_permutations() const {
     return permutations;
 }
 
