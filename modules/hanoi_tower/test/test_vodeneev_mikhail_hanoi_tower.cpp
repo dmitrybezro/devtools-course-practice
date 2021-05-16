@@ -69,7 +69,9 @@ TEST(HanoiTowerTest, Number_of_permutations) {
 
     a.ring(1, &testA, &testB, &testC);
 
-    ASSERT_EQ(1, a.get_permutations());
+    int num = a.get_permutations();
+
+    ASSERT_EQ(1, num);
 }
 
 
