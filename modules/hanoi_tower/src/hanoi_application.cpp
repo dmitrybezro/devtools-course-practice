@@ -50,9 +50,6 @@ std::string HanoiApplication::operator()(int argc, const char** argv) {
             throw  std::runtime_error("ERROR: Should be 1 arguments\n");
         }
         _size = parseArgument(argv[1]);
-        if ((_size < 0) || (_size > 20)) {
-            throw std::runtime_error("ERROR: Wrong format\n");
-        }
     }
     catch (std::exception& exp) {
         return exp.what();
@@ -65,6 +62,7 @@ std::string HanoiApplication::operator()(int argc, const char** argv) {
         testB = h_t.GetTowerB(), testC = h_t.GetTowerC();
 
     h_t.ring(_size, &testA, &testB, &testC);
-    stream << "Number of permutations of rings = " << h_t.get_permutations();
+    stream << "Number of permutations of rings = " 
+            << std::to_string(h_t.get_permutations());
     return stream.str();
 }

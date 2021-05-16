@@ -56,3 +56,12 @@ set_tests_properties (${prefix}_Check_double_argument PROPERTIES
 PASS_REGULAR_EXPRESSION "ERROR: Wrong format"
 LABELS "${MODULE}")
 
+add_test(
+NAME ${prefix}_Check_number_permutations_3
+COMMAND ${APPLICATION} 3
+)
+
+set_tests_properties (${prefix}_Check_number_permutations_3 PROPERTIES
+PASS_REGULAR_EXPRESSION "Number of permutations of rings = 7"
+LABELS "${MODULE}")
+

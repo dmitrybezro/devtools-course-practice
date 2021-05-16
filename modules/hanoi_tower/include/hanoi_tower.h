@@ -11,7 +11,7 @@ class Hanoi {
     std::stack<int> towerA;
     std::stack<int> towerB;
     std::stack<int> towerC;
-    char permutations = 0;
+    int permutations = 0;
 
  public:
     Hanoi();
@@ -22,7 +22,7 @@ class Hanoi {
     std::stack<int> GetTowerC();
     void ring(int n, std::stack<int> *A, std::stack<int> *B,
         std::stack<int> *C);
-    char get_permutations() const;
+    int get_permutations() const;
 };
 
 #endif  // MODULES_HANOI_TOWER_INCLUDE_HANOI_TOWER_H_
